@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/explore.css">
+    <title>电影搜索</title>
+</head>
+
+<body>
+    <div id="first-page" class="page">
+        <div id="section01">
+            <a href="./index.html">
+                <button id="back"> 返回</button>
+            </a>
+        </div>
+
+        <div class="sbox">
+            <form action="https://www.baidu.com/s">
+                <input type="text" name="word" id="search-text" required class="search-box" placeholder="请输入您要搜索的内容"
+                    onmouseover="darker()" onmouseout="lighter()" />
+                <button class="close-icon" type="reset"></button>
+                <input type="submit" value="搜索" class="search">
+            </form>
+        </div>
+</body>
+<script src="../JS/explore.js"></script>
+
+</html>

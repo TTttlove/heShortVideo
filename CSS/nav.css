@@ -1,0 +1,84 @@
+.nav {
+    margin-top: 15px;
+    /* height: 60px; */
+    /* background-color: red; */
+}
+
+/* 疑点，为什么不直接img大小变不了 */
+.nav-portrait {
+    float: left;
+    /* transition: all 1s; */
+}
+
+.nav-portrait img {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.75s;
+}
+
+.nav-portrait img:hover {
+    transform: rotate(180deg);
+    scale: 1.5;
+}
+
+.nav-right_link {
+    float: right;
+}
+
+.nav-right_link ul li {
+    position: relative;
+    float: left;
+    /* box-shadow: 0 0.4rem rgb(175, 174, 174); */
+    /* line-height: 60px; */
+    border-radius: 15%;
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    /* color: inherit; */
+    /* 这个属性还是不太会用*/
+}
+
+.nav-right_link ul a {
+    float: left;
+    /* 如果含有span标签 */
+    /* display: block; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+/* 鉴于这里比较繁琐的层级关系，建议使用i */
+.nav-right_link .nav-share li {
+    background-color: #333;
+    border-top: 1px solid #ccc;
+    z-index: 55;
+    display: none;
+}
+
+.nav-right_link .nav-share:hover li {
+    display: block;
+}
+
+.nav-right_link li:last-child a {
+    border-right: none;
+}
+
+.nav-right_link li:hover {
+    background-image: linear-gradient(to bottom right, rgb(241, 21, 172), rgb(25, 68, 221));
+}
+
+.nav-right_link li a:hover {
+    scale: 1.2;
+}
+
+.nav-right_link li p {
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background-color: #ccc;
+    top: 19px;
+    right: 0;
+}

@@ -1,0 +1,177 @@
+.header {
+    margin-top: 15px;
+    /* background-color: #fff; */
+}
+
+.header .container {
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    height: 500px;
+}
+
+.header-left {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+/* .header-movie_sea {
+    position: relative;
+    margin: 40px auto 40px auto;
+    width: 90%;
+    height: 80%;
+    font-family: "Times New Roman", Times, serif
+}
+
+.header-movie_sea .couplet-up,
+.couplet-down,
+.table {
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.header-movie_sea img {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    left: -5%;
+    bottom: -5%;
+    background-size: contain;
+} */
+
+.header-right {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+/* 为什么有的时候auto不管用 */
+.header-poster {
+    float: left;
+    width: 1100px;
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-poster-num {
+    height: 100%;
+    /* 这个是个弊端 */
+    width: 10000px;
+    transition: all 1s;
+}
+
+.header-poster img {
+    float: left;
+    width: 1100px;
+    height: 100%;
+}
+
+.header-right .zuojiantou,
+.youjiantou {
+    cursor: pointer;
+    /* background-color: rgba(217, 220, 219, 0.3);*/
+    background-image: linear-gradient(to bottom right, rgb(67, 50, 183), rgb(99, 104, 125));
+    position: absolute;
+    top: 40%;
+    border-radius: 30%;
+    /* opacity: 0.2; */
+    font-size: 30px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.header-right .youjiantou:hover {
+    color: rgb(237, 25, 184);
+    scale: 1.3;
+}
+
+.header-right .zuojiantou:hover {
+    color: rgb(237, 25, 184);
+    scale: 1.3;
+}
+
+.header-right .zuojiantou {
+    cursor: not-allowed;
+    left: 2%;
+}
+
+.header-right .youjiantou {
+    right: 2%;
+}
+
+.header-poster-num .character {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    /* background-color: rgb(24, 24, 24, 0.7); */
+    background-image: linear-gradient(to top right, rgb(23, 22, 22), rgb(70, 70, 72), transparent);
+    opacity: 0.5;
+    /* transition: all 0.5s; */
+}
+
+.header-poster-num .character:hover {
+    opacity: 1;
+}
+
+.header-poster-num .character .couplet-up,
+.couplet-down,
+.table {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #ccc;
+
+}
+
+.header-three_bt {
+    position: relative;
+    /* 浮动就不可以auto */
+    float: left;
+    margin-top: 15px;
+    height: 10%;
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+.header-three_bt a {
+    position: absolute;
+    font-size: 20px;
+    border: 2px solid #bbb;
+    border-radius: 15px;
+    padding: 5px;
+    top: 10%;
+    left: 17%;
+}
+
+.header-three_bt button {
+    position: absolute;
+    font-size: 20px;
+    color: #ccc;
+    border: 2px solid #bbb;
+    background-color: transparent;
+    /* line-height: 100%; */
+    border-radius: 15px;
+    padding: 5px;
+    top: 10%;
+    cursor: pointer;
+}
+
+.header-three_bt button:nth-child(2) {
+    left: 43%;
+}
+
+.header-three_bt button:nth-child(3) {
+    left: 69%;
+}
+
+.header-three_bt button:hover {
+    color: red;
+}

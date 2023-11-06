@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="'en">
+
+<head>
+    <meta charest="'UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html:charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/video.css">
+    <title>短视频播放</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="file-name">
+                <h2>短视频播放</h2>
+            </div>
+        </header>
+
+        <aside>
+            <!-- <session>
+                    <header class="text"> <h3>欢迎进入观赏页面！</h3> </header>
+                    <p class="text">为您找到如下内容，尽情观看。如有其他问题，请及时在官方网址留言反馈。</p>
+                </session> -->
+            <session align="center">
+                <header class="text">
+                    <h3>相关推荐</h3>
+                </header>
+                <!--     
+                    <figure>
+                        <video src="video/2.mp4" id="leftvideo" controls="controls"></video>
+                        <figcaption class="text1">1</figcaption>
+                    </figure>
+                -->
+                <figure>
+                    <video src="../video/2.mp4" id="asidevideo" controls="controls"></video>
+                    <figcaption class="text1">视频1</figcaption>
+                </figure>
+                <figure>
+                    <video src="../video/3.mp4" id="asidevideo" controls="controls"></video>
+                    <figcaption class="text1">视频2</figcaption>
+                </figure>
+                <figure>
+                    <video src="../video/4.mp4" id="asidevideo" controls="controls"></video>
+                    <figcaption class="text1">视频3</figcaption>
+                </figure>
+            </session>
+        </aside>
+
+        <main>
+            <session align="center">
+                <header class="text">
+                    <h3>短视频播放</h3>
+                </header>
+                <time datetime="2018-07-05" class="text time">2023年7月5日</time>
+                <figure>
+                    <div>
+                        <button>
+                            <!--这里的超链接之后要改成跳转到主页面-->
+                            <a href="../index.html">返回</a>
+                        </button>
+                        <button onclick="playPause()" class="playpause">播放/暂停</button>
+                        <button onclick="makeBig()" class="big">大</button>
+                        <button onclick="makeNormal()" class="normal">正常</button>
+                        <button onclick="makeSmall()" class="small">小</button>
+                    </div>
+                    <br />
+                    <video controls width="90%" id="video">
+                        <source src="../video/1.mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <!-- <figcaption>《视频一》</figcaption> -->
+                </figure>
+            </session>
+            <session align="left">
+                <header class="text file-introduction">
+                    <h3 id="">简介：</h3>
+                </header>
+                <p class="text file-introduction">
+                </p>
+            </session>
+        </main>
+
+    </div>
+    <footer class="page-footer">@2023 短视频播放页面设计</footer>
+</body>
+<script src="../JS/video.js"></script>
+
+</html>

@@ -1,0 +1,121 @@
+/* .text{
+  cursor: pointer;
+} */
+/* .ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 0 0 33%;
+} */
+/* 掌握的还是不熟练 */
+.text-movie {
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    height: 425px;
+    width: 25%;
+    transition: all 0.5s;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* padding-bottom: 15px; */
+}
+
+.text-movie:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.text-movie-pic {
+    height: 85%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-movie-pic .movie_img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.text-movie .tag {
+    position: absolute;
+    width: 90%;
+    /* 为了实现预期效果，所以使用top */
+    top: 85%;
+    left: 3%;
+}
+
+.text-movie .tag span {
+    display: block;
+    /* 可能跟高度塌陷有关系 */
+    margin-top: 3px;
+    padding-left: 15px;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.text-movie .tag span:first-child {
+    font-size: 20px;
+}
+
+.text-movie .text-movie-type {
+    width: 60%;
+    /* 不建议float */
+    float: left;
+}
+
+.text-movie:hover .text-movie-type {
+    width: 90%;
+    float: none;
+}
+
+.text-movie-introduce {
+    position: absolute;
+    top: 0%;
+    right: -70%;
+    /* background-color: #fff; */
+    height: 90%;
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+}
+
+.text-movie-introduce p {
+    margin-top: 10px;
+    width: 80px;
+    color: #ccc;
+    font-size: 25px;
+}
+
+.text-movie-introduce .movie-introduce-outline {
+    display: inline-block;
+    height: 90%;
+    width: 80%;
+    overflow: auto;
+    margin-top: 2px;
+    color: #ccc;
+}
+
+.text-movie:hover {
+    scale: 1.1;
+    z-index: 5;
+}
+
+.text-movie:hover .text-movie-introduce {
+    display: block;
+}
+
+.text-movie .like {
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 17%;
+    right: 8%;
+    font-size: 35px;
+}
+
+.filter {
+    filter: brightness(50%);
+}

@@ -1,0 +1,16 @@
+.footer{
+    margin-top: 50px;
+    height: 100px;
+    float: left;
+    width: 100%;
+    /* background-color: #fff; */
+}
+.footer_end{
+    border-top: 1px solid #ccc;
+}
+.footer_end p{
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+    font-size: 12px;
+}
